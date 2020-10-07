@@ -38,7 +38,7 @@ usePassport(passport);
 app.use('/users', users);
 //index route
 app.get('/', (req, res) => {
-    res.send('Invalid endpoint hiiii');
+    res.send('Invalid endpoint');
 });
 
 const port = process.env.PORT || 8000;
