@@ -29,6 +29,7 @@ const users = require('./routes/users');
 
 app.use(cors());
 
+app.use(express.static(path.join(__dirname, 'client')))
 app.use(bodyParser.json()); 
 
 app.use(passport.initialize());
